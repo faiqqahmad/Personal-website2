@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    height: 0;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: rgb(156, 109, 178);
+    position: relative;
+    height: 100vh;
+    width: 100wh;
+}
+
+.nameBox {
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    height: 20vh;
+    justify-content: center;
+    
+    min-height: 200px;
+    
+}
+
+.name {
+    color: white;
+    display:block;
+    border-radius: 3px;
+    border-color: white;
+    margin-left: 5vw;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+}
+
+.mainBody {
+    height: 60vh;
+    position: relative;
+    display: flex;
+    
+}
+
+.leftcol {
+    height: 100%;
+    width: 15vw;
+    
+    position: absolute;
+    left: 0;
+    
+}
+
+.line {
+    width: 3px;
+    height: 60vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: 10;
+    top: 0;
+}
+
+.centercol {
+    height: 100%;
+    width: 70vw;
+    
+    position: absolute;
+    left: 15vw;
+    
+}
+
+.welcomeText {
+    color: white;
+    font-size: 100px;
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+
+}
+
+.subtext {
+    color: white;
+    font-size: 40px;
+    font-family: Helvetica, sans-serif;
+    width: 75%;
+    padding-left: 20px;
+}
+
+.rightcol {
+    height: 100%;
+    width: 15vw;
+    
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+}
+
+
+.bottomBar {
+    
+    width: 100vw;
+    min-height: 200px;
+    bottom: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowImages {
+    height: 50px;
+    width: 50px;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.about {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.forCentering {
+    width: 50;
+    height: 50;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
