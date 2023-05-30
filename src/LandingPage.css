@@ -47,17 +47,14 @@ body {
 .mainBody {
     height: 60vh;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
     
 }
 
 .leftcol {
-    height: 100%;
-    width: 15vw;
     
-    position: absolute;
-    left: 0;
-    
+    display: block;
 }
 
 .line {
@@ -70,12 +67,9 @@ body {
 }
 
 .centercol {
-    height: 100%;
-    width: 70vw;
+   
     
-    position: absolute;
-    left: 15vw;
-    
+    display: block;
 }
 
 .welcomeText {
@@ -83,6 +77,7 @@ body {
     font-size: 100px;
     font-family: Helvetica, sans-serif;
     padding-left: 20px;
+    margin-top: 5vh;
 
 }
 
@@ -95,12 +90,10 @@ body {
 }
 
 .rightcol {
-    height: 100%;
-    width: 15vw;
-    
-    position: absolute;
-    right: 0;
-    min-width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -117,11 +110,23 @@ body {
     justify-content: center;
 }
 
-.arrowImages {
+.arrowImageBottom {
     height: 50px;
     width: 50px;
     transform: rotate(90deg);
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrowImageRight {
+    height: 50px;
+    width: 50px;
+    transform: rotate(0deg);
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
 }
 
 .about {
@@ -130,12 +135,31 @@ body {
     font-size: 40px;
 }
 
-.forCentering {
-    width: 50;
-    height: 50;
-    background-color: green;
+.projects {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    
+   
+}
+
+.forCenteringBottom {
+    width: 48;
+    height: 48;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-content: center;
+}
+
+.forCenteringRight {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     align-content: center;
 }

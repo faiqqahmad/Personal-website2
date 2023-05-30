@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./LandingPage.css"
-import arrow from "./assets/right-chevron.png"
+import arrow from "./assets/arrow-25-48.ico"
 
 export default function App() {
 
@@ -22,12 +22,17 @@ return <>
             <h1 className="welcomeText">Welcome to my portfolio.</h1>
             <h3 className="subtext">I am an aspiring full-stack software engineer, hoping to make my mark.</h3>
         </div>
-        <div className="rightcol"></div>
+        <div className="rightcol">
+            <div className="forCenteringRight">
+                <h3 className="projects">Projects</h3>
+                <img className="arrowImageRight" src={arrow} alt="arrow"/>
+            </div>
+        </div>
     </div>
     <div className="bottomBar">
-        <div className="forCentering">
+        <div className="forCenteringBottom">
             <h3 className="about">About</h3>
-            <img className="arrowImages" src={arrow} alt="arrow"/>
+            <img className="arrowImageBottom" src={arrow} alt="arrow"/>
         </div>
     </div>
 </>
