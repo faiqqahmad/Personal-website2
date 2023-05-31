@@ -1,5 +1,6 @@
 import arrow from "../assets/whiteArrow.png"
 import "../styles/LandingPage.css"
+import { Link } from "react-router-dom"
 
 export default function LandingPage() {
     return <>
@@ -16,16 +17,16 @@ export default function LandingPage() {
             </div>
             <div className="rightcol">
                     <div className="forCenteringRight">
-                        <a href="https://google.com"><h3 className="projects">Projects</h3></a>
-                        <a className="aTag1" href="https://google.com:"><img className="arrowImageRight" src={arrow} alt="arrow"/></a>
+                        <Link to="/ProjectsPage"><h3 className="projects">Projects</h3></Link>
+                        <Link className="aTag1" to="/ProjectsPage"><img className="arrowImageRight" src={arrow} alt="arrow"/></Link>
                     </div>
                 
             </div>
         </div>
         <div className="bottomBar">
             <div className="forCenteringBottom">
-                <a href="https://google.com"><h3 className="about">About</h3></a>
-                <a className="aTag1" href="https://google.com"><img className="arrowImageBottom" src={arrow} alt="arrow"/></a>
+                <Link to="/AboutPage"><h3 className="about">About</h3></Link>
+                <Link className="aTag1" to="/AboutPage"><img className="arrowImageBottom" src={arrow} alt="arrow"/></Link>
             </div>
         </div>
     </> 
